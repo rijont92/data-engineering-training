@@ -1,0 +1,32 @@
+Daily Report - Monday Practice
+
+Today I worked on:
+- Python practice with lists and dictionaries
+- Filtering student data
+- Calculating averages and grouping data
+- Building a simple student report in Python
+
+Completed tasks:
+
+- Task 1
+- Task 2
+- Task 3
+- Task 4
+- Task 5
+- Task 6
+
+Not completed yet:
+
+- Bonus tasks
+
+Biggest difficulty:
+
+- Working with loops and dictionaries together, especially when calculating averages and grouping data
+
+How I tried to solve it:
+
+- I went step by step using loops and if statements and tested everything in the terminal
+
+What I need to improve for Tuesday:
+
+- I need to get better at organizing code and understanding CSV files
