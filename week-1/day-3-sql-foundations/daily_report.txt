@@ -1,0 +1,27 @@
+Daily Report - Day 3 SQL Foundations
+
+Today I worked on:
+- SQL basics and table creation.
+- Practicing SELECT, WHERE, ORDER BY and calculated columns.
+
+Completed tasks:
+- Created the orders table.
+- Inserted sample data.
+- Completed SQL practice queries.
+- Created a custom restaurant table.
+- Explained a simple data pipeline.
+
+Not completed yet:
+- Nothing.
+
+The hardest part was:
+- Understanding filtering with multiple conditions.
+
+How I tried to solve it:
+- I tested every query in SQLiteOnline and checked the results.
+
+What I understood better today:
+- How SQL queries can transform raw data into useful business information.
+
+What I need to improve for the next session:
+- Practice more advanced SQL and learn more about data engineering workflows.
