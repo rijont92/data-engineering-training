@@ -1,0 +1,47 @@
+# Individual Reflection - Amar Fejzullahu
+
+## My role in the group:
+
+My role in the group was SQL + Insights Lead. I was responsible for creating the SQL database setup, writing analysis queries, and helping prepare business insights.
+
+## What I worked on:
+
+I worked on:
+
+* Creating `setup.sql`.
+* Creating the orders table with the required columns.
+* Inserting the same data used in `orders.csv`.
+* Writing SQL queries in `sql_analysis.sql`.
+* Testing queries in SQLiteOnline.com.
+* Preparing business insights based on the analysis results.
+* Helping organize the final project documentation.
+
+## What I understood better today:
+
+I understood better how SQL can be used to answer business questions from structured data.
+
+I learned how commands like SELECT, WHERE, SUM, COUNT, and GROUP BY help analyze business information.
+
+## What was difficult for me:
+
+The difficult part was making sure the SQL queries matched the Python results and that the dataset was consistent between the CSV file and database table.
+
+## What I can explain live:
+
+I can explain:
+
+* How the database table was created.
+* How data was inserted.
+* How SQL queries were used for analysis.
+* How revenue and order counts were calculated.
+* How business insights were created from query results.
+
+## What I still need to practice:
+
+I still need to practice more advanced SQL queries, database design, and working with larger datasets.
+
+## Did I use AI? If yes, how did I use it?
+
+Yes, I used AI for clarification, debugging help, and understanding some concepts related to SQL and documentation.
+
+I made sure to understand the final work and be able to explain my own contribution.

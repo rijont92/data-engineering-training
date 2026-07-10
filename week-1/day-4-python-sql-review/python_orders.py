@@ -288,20 +288,21 @@ for order in totals:
 
 
 
+def get_price(order):
+    return order["price"]
 
-sorted_by_price = orders.copy()
+sorted_by_price = sorted(orders, key=get_price, reverse=True)
 
+print("\nOrders sorted by price:")
 
-for i in range(len(sorted_by_price)):
-
-    for j in range(i + 1, len(sorted_by_price)):
-
-        if sorted_by_price[i]["price"] < sorted_by_price[j]["price"]:
-
-            temp = sorted_by_price[i]
-            sorted_by_price[i] = sorted_by_price[j]
-            sorted_by_price[j] = temp
-
+for order in sorted_by_price:
+    print(
+        order["customer_name"],
+        "-",
+        order["product"],
+        "-",
+        order["price"]
+    )
 
 print("\nOrders sorted by price:")
 
@@ -316,19 +317,19 @@ for order in sorted_by_price:
 
 
 
-sorted_by_total = totals.copy()
+def get_total_amount(order):
+    return order["total_amount"]
 
+sorted_by_total = sorted(totals, key=get_total_amount, reverse=True)
 
-for i in range(len(sorted_by_total)):
+print("\nOrders sorted by total amount:")
 
-    for j in range(i + 1, len(sorted_by_total)):
-
-        if sorted_by_total[i]["total_amount"] < sorted_by_total[j]["total_amount"]:
-
-            temp = sorted_by_total[i]
-            sorted_by_total[i] = sorted_by_total[j]
-            sorted_by_total[j] = temp
-
+for order in sorted_by_total:
+    print(
+        f"{order['customer_name']} - "
+        f"{order['product']} - "
+        f"${order['total_amount']}"
+    )
 
 print("\nTop 3 orders by total amount:")
 
