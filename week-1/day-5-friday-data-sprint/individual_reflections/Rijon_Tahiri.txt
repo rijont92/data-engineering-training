@@ -1,0 +1,52 @@
+# Individual Reflection - Rijon Tahiri
+
+## My role in the group:
+
+My role in the group was Python Lead. I was responsible for analyzing the order data using Python and creating the Python business report.
+
+## What I worked on:
+
+I worked on creating `python_analysis.py`.
+
+My tasks included:
+
+* Reading the `orders.csv` file.
+* Organizing the code using functions.
+* Filtering completed, pending, and cancelled orders.
+* Calculating total amounts for orders.
+* Calculating completed revenue only.
+* Finding the most expensive order and highest total amount order.
+* Counting orders by status, city, and category.
+* Testing the Python script and checking that the output was correct.
+
+## What I understood better today:
+
+I understood better how Python can be used to process business data and transform raw CSV files into useful information.
+
+I also learned the importance of organizing code with functions and checking that calculations match business requirements.
+
+## What was difficult for me:
+
+The difficult part was making sure that the Python calculations were correct and that pending and cancelled orders were not included in revenue.
+
+Keeping the Python output consistent with the expected business logic was also important.
+
+## What I can explain live:
+
+I can explain:
+
+* How the CSV file was loaded.
+* How functions were created in Python.
+* How completed revenue was calculated.
+* How orders were grouped by status, city, and category.
+* How the final business report was generated.
+
+## What I still need to practice:
+
+I still need to practice more advanced data analysis techniques, working with larger datasets, and creating visual reports from data.
+
+## Did I use AI? If yes, how did I use it?
+
+Yes, I used AI as a learning assistant for understanding requirements, checking logic, and getting explanations for Python concepts.
+
+I reviewed and understood the code before using it and made sure I could explain my contribution.
