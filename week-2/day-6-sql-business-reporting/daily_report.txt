@@ -1,0 +1,45 @@
+Daily Report - Day 6 Practice
+
+
+Today I worked on:
+- SQL business reporting using aggregations, GROUP BY, HAVING, and JOINs.
+
+
+SQL setup completed:
+- Created and populated orders, customers, and products tables.
+
+
+Aggregation tasks completed:
+- Used COUNT, SUM, AVG, MIN, and MAX to calculate business metrics.
+
+
+GROUP BY tasks completed:
+- Created reports by status, date, customer, product, city, and category.
+
+
+JOIN tasks completed:
+- Connected multiple tables to create readable business reports.
+
+
+Business report completed:
+- Analyzed SQL results and explained business insights.
+
+
+What I understood better today:
+- How SQL queries can transform raw data into useful business reports.
+
+
+What was difficult:
+- Understanding how JOINs connect different tables and how filtering affects calculations.
+
+
+What I need to practice more:
+- Advanced SQL reporting and more complex business queries.
+
+
+Did I use AI? If yes, how did I use it?
+- Yes. I used AI to review SQL logic, improve explanations, and check if my queries matched the requirements.
+
+
+What can I explain live without help:
+- COUNT, SUM, AVG, GROUP BY, HAVING, JOIN, and revenue calculations.
