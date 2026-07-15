@@ -1,0 +1,25 @@
+DATA VALIDATION REPORT
+==================================================
+
+Raw records: 24
+Valid records: 20
+Invalid records: 4
+
+Unique raw values before cleaning:
+  Statuses:   Completed, cancelled, complete, completed, pending, returned
+  Cities:     Ferizaj, Gjilan, Mitrovica, Peja, Prishtina, Prishtine, Prizren, Vushtrri
+  Categories: Accessories, Electronics, Office, accessories
+  Channels:   Online, online, partner, store, unknown
+
+Unique values after cleaning (valid records only):
+  Statuses:   cancelled, completed, pending, returned
+  Cities:     Ferizaj, Mitrovica, Peja, Prishtina, Prizren, Vushtrri
+  Categories: Accessories, Electronics, Office
+  Channels:   online, partner, store, unknown
+
+Invalid record details:
+--------------------------------------------------
+Order ID 15: Missing customer name
+Order ID 17: Quantity must be greater than 0
+Order ID 18: Quantity must be greater than 0
+Order ID 20: Price must be greater than 0

@@ -1,0 +1,79 @@
+EXECUTIVE BUSINESS PERFORMANCE REPORT
+==================================================
+
+SECTION 1: KEY PERFORMANCE INDICATORS
+--------------------------------------------------
+Total Completed Revenue: EUR 2,689.00
+Number of Completed Orders: 14
+Non-Revenue Orders (pending/cancelled/returned): 6
+Invalid Records Removed: 4
+Average Order Size: EUR 192.07
+Highest Completed Order: EUR 720.00
+Lowest Completed Order: EUR 15.00
+
+SECTION 2: PERFORMANCE BY DIMENSIONS
+--------------------------------------------------
+Completed Revenue by City:
+  - Prishtina: EUR 849.00
+  - Vushtrri: EUR 790.00
+  - Peja: EUR 510.00
+  - Prizren: EUR 360.00
+  - Mitrovica: EUR 180.00
+
+Completed Revenue by Category:
+  - Electronics: EUR 1,960.00
+  - Office: EUR 430.00
+  - Accessories: EUR 299.00
+
+Completed Revenue by Channel:
+  - online: EUR 1,099.00
+
+  - partner: EUR 800.00
+
+  - store: EUR 750.00
+
+  - unknown: EUR 40.00
+
+SECTION 3: TOP RECORDS AND RANKINGS
+--------------------------------------------------
+Top 5 Completed Orders by Value:
+  - Order 16 | Bleron | Laptop: EUR 720.00
+  - Order 1 | Arta | Laptop: EUR 700.00
+  - Order 8 | Leart | Monitor: EUR 360.00
+  - Order 23 | Faton | Desk Chair: EUR 240.00
+  - Order 4 | Dren | Monitor: EUR 180.00
+
+Top 3 Customers by Completed Revenue:
+  - Bleron: EUR 720.00
+  - Arta: EUR 700.00
+  - Leart: EUR 440.00
+
+Top 3 Products by Completed Revenue:
+  - Laptop: EUR 1,420.00
+  - Monitor: EUR 540.00
+  - Desk Chair: EUR 360.00
+
+Top 3 Cities by Completed Revenue:
+  - Prishtina: EUR 849.00
+
+  - Vushtrri: EUR 790.00
+
+  - Peja: EUR 510.00
+
+SECTION 4: DATA QUALITY INVESTIGATION
+--------------------------------------------------
+- Removed 4 invalid records (missing names, 0 price/quantity).
+- 6 valid orders are pending/cancelled/returned and excluded from revenue.
+- Status inconsistencies before cleaning: 'Completed', 'complete' -> normalized to 'completed'.
+- City inconsistency: 'Prishtine' -> normalized to 'Prishtina'.
+- Category inconsistency: 'accessories' -> normalized to 'Accessories'.
+- Channel inconsistency: 'Online' -> normalized to 'online'.
+- Calculating revenue before validation would skew averages and include free/invalid orders.
+- Counting pending/cancelled/returned as revenue would overstate income with money not received.
+
+SECTION 5: STRATEGIC BUSINESS RECOMMENDATIONS
+--------------------------------------------------
+1. Fix data entry: Add frontend validation to prevent empty names, zero prices, and
+   negative quantities before orders are submitted.
+2. Focus on top locations: Prishtina and Vushtrri drive the most revenue.
+   Prioritize digital campaigns and stock in these cities.
