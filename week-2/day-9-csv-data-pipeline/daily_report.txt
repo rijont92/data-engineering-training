@@ -1,0 +1,44 @@
+Daily Report - Day 9 Practice
+
+Today I worked on:
+- Building a complete CSV data pipeline using Python.
+- Loading raw CSV files and transforming them into clean business-ready data.
+- Creating validation, cleaning, enrichment, and reporting logic.
+
+Pipeline parts completed:
+- Part 1: Explained the Bronze → Silver → Gold pipeline architecture.
+- Part 2: Loaded orders, customers, and products CSV files using csv.DictReader.
+- Part 3: Created lookup tables to simulate SQL JOIN operations.
+- Part 4: Normalized status, city, and channel values.
+- Part 5: Validated orders and separated invalid records with reasons.
+- Part 6: Enriched valid orders with customer and product information.
+- Part 7: Generated orders_clean.csv and invalid_orders.csv.
+- Part 8: Created data quality report.
+- Part 9: Created business summary and Gold reports.
+- Added bonus challenges including duplicate detection and additional reports.
+
+Most difficult part:
+- The most difficult part was designing the validation logic and making sure invalid records were not lost.
+- Understanding how lookup dictionaries replace SQL JOIN thinking was also challenging.
+
+One bug/error I fixed:
+- I fixed a CSV writing error:
+  "ValueError: dict contains fields not in fieldnames"
+- The issue happened because completed_orders.csv did not include all fields from clean orders.
+- I fixed it by updating the CSV writer to ignore extra fields and improving the output field definitions.
+
+What I understood better about Bronze/Silver/Gold:
+- Bronze stores raw source data without changing it.
+- Silver contains cleaned, validated, and enriched data.
+- Gold contains business reports created from trusted Silver data.
+- Data should be transformed step by step instead of directly creating reports from raw files.
+
+What I need to practice more:
+- Writing more scalable data pipelines.
+- Improving data validation strategies.
+- Working with larger datasets and tools like Spark/Databricks.
+- Writing automated tests for pipeline functions.
+
+Did I use AI? If yes, how did I use it?
+- Yes. I used AI as a learning assistant to review my code structure, understand errors, improve documentation, and verify that my pipeline follows data engineering best practices.
+- I used it to understand concepts, not to replace my own implementation.
