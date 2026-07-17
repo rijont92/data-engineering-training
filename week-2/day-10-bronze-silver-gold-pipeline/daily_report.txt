@@ -1,0 +1,46 @@
+Daily Report - Day 10 Practice
+Today I worked on:
+- Building a Python-based Bronze, Silver, and Gold data engineering pipeline.
+- Designing data validation, cleaning, and transformation processes using only Python built-in modules.
+- Implementing custom logic to identify invalid data, separate it, and generate business-level reports.
+
+Bronze tasks completed:
+- Loaded and printed raw records for orders (31 records), customers (13 records), and products (12 records).
+- Kept raw files completely unchanged to preserve data history.
+- Wrote detailed layer explanations about Bronze files and issues.
+
+Silver tasks completed:
+- Normalized statuses (completed, cancelled, pending) and sales channels (online, store, unknown).
+- Normalized city names (Prishtina, Vushtrri, Gjilan, etc.) and handled empty values appropriately.
+- Filtered products to ensure only items with positive numeric prices are loaded.
+- Validated orders for missing values, negative or invalid quantities, duplicate order IDs, and referential integrity (checking if customer and product exist in clean registries).
+- Separated invalid records (9 orders) into invalid_orders.csv with clear reasons.
+- Enriched clean orders (22 orders) with customer names, cities, product names, categories, prices, and calculated total_amount (quantity * price).
+
+Gold tasks completed:
+- Generated revenue_by_category.csv, revenue_by_city.csv, revenue_by_customer.csv, and top_products.csv.
+- Implemented bonus reports: revenue_by_channel.csv, invalid_reasons_summary.csv, unsold_products.csv, and inactive_customers.csv.
+- Ensured all Gold reports are sorted from highest to lowest completed revenue.
+- Generated executive_summary.txt with core KPI metrics and recommendations.
+- Generated dashboard_data.csv with a single-row aggregation of core pipeline stats.
+- Created data_quality_report.txt showing detailed validation checks.
+
+What I understood better today:
+- The importance of keeping raw data untouched (Bronze layer) to ensure pipeline re-runability and audit trails.
+- How structured validation checks in the Silver layer protect downstream reports from data pollution.
+- How the Gold layer aggregates cleansed data into specific business-centric outputs ready for dashboard ingestion.
+
+What was difficult:
+- Writing the data validation without libraries like Pandas. Using built-in modules (csv.DictReader, DictWriter) and pure Python loops required careful handling of empty rows, spaces, and formatting issues.
+- Handling duplicate checks and referential integrity (e.g., product 111 being invalid because of an invalid product price, and thus orders referencing it becoming invalid product ID errors).
+
+One result I can explain and defend:
+- The completed revenue of $3,189.00. This calculation is derived strictly from valid, completed orders in the Silver layer, using the formula quantity * price. Duplicate orders (like the second row of order 24) and orders with invalid customer/product references (like customer 99 or product 999) were rejected, and order status variations (like "complete" or "done") were normalized to "completed" before summation.
+
+What I need to practice more:
+- Pure Python date-time validation and standardization for non-matching formats.
+- Scaling Python pipelines to run efficiently on larger data volumes using generators.
+
+Did I use AI? If yes, how did I use it?
+- Yes. I used AI as a learning assistant to review my code structure, understand errors, improve documentation, and verify that my pipeline follows data engineering best practices.
+- I used it to understand concepts, not to replace my own implementation.
