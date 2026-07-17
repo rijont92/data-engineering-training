@@ -1,0 +1,15 @@
+Executive Summary - Day 10 Pipeline
+
+Total raw orders: 31
+Valid silver orders: 22
+Invalid orders: 9
+Completed orders: 15
+Pending orders: 3
+Cancelled orders: 4
+Completed revenue: 3189.00
+Top category: Electronics
+Top city: Vushtrri
+Top customer: Arta
+Top product: Laptop
+Most common invalid reason: invalid_product_id
+Business recommendation: Focus on the highest revenue category and reduce invalid orders by improving data validation and data quality before loading into the Silver layer.

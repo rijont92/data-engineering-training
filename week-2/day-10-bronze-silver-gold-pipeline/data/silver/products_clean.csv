@@ -1,0 +1,11 @@
+product_id,product_name,category,price
+101,Laptop,Electronics,700.0
+102,Mouse,Accessories,15.0
+103,Keyboard,Accessories,40.0
+104,Monitor,Electronics,180.0
+105,Headphones,Accessories,50.0
+106,Desk Chair,Office,120.0
+107,USB Cable,Accessories,8.0
+108,Desk,Office,220.0
+109,Webcam,Electronics,90.0
+110,Notebook,Unknown,5.0
