@@ -1,0 +1,35 @@
+Daily Report - Day 2 Practice
+
+Today I worked on:
+- Building a CSV mini data pipeline using Python.
+- Reading raw student data from a CSV file and processing records.
+
+Completed tasks:
+- Created the required project folder structure.
+- Loaded and inspected CSV data using Python.
+- Detected missing values, invalid numeric values, and inconsistent text values.
+- Cleaned the student records using defined rules.
+- Created students_clean.csv with cleaned data.
+- Generated data quality and summary reports.
+- Added extra features like attendance level, duplicate ID detection, and error handling.
+
+Not completed yet:
+- No major tasks remain incomplete.
+- Some bonus improvements can be added in future practice.
+
+Biggest difficulty:
+- Handling missing values and converting raw CSV data into correct numeric formats without causing errors.
+
+How I tried to solve it:
+- Tested each part of the pipeline step by step.
+- Used print statements to check data during processing.
+- Read error messages and fixed issues in the cleaning logic.
+
+What I understood better today:
+- How raw CSV data needs to be cleaned before analysis.
+- How Python can be used to build a simple data pipeline.
+- The importance of validating and organizing data before generating reports.
+
+What I need to improve for the next session:
+- Improve my error handling and write cleaner code structure.
+- Practice working with larger datasets and more complex transformations.
