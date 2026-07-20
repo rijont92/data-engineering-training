@@ -1,0 +1,67 @@
+# Daily Report - Day 11 Practice
+
+Today I worked on:
+- Building a Python + SQL data pipeline that transforms raw Bronze data into trusted Silver data and business-ready Gold reports.
+- Implementing data validation, normalization, enrichment, and reporting logic using Python built-in modules.
+- Preparing clean data for SQL analysis.
+
+Bronze tasks completed:
+- Loaded raw CSV files:
+  - orders_raw.csv
+  - customers_raw.csv
+  - products_raw.csv
+- Kept Bronze files unchanged to preserve raw data.
+- Identified data quality problems including missing values, invalid quantities, wrong statuses, invalid IDs, and inconsistent city/channel values.
+
+Silver tasks completed:
+- Created validation logic for orders:
+  - Invalid quantities
+  - Missing order dates
+  - Invalid customer IDs
+  - Invalid product IDs
+  - Duplicate order IDs
+  - Invalid statuses
+- Normalized order statuses:
+  - completed
+  - pending
+  - cancelled
+- Normalized cities and sales channels.
+- Built customer and product lookup tables for enrichment.
+- Generated:
+  - orders_clean.csv
+  - invalid_orders.csv
+- Enriched valid orders with customer information, product information, price, category, and calculated total_amount.
+
+Gold tasks completed:
+- Generated business reports:
+  - revenue_by_city.csv
+  - revenue_by_category.csv
+  - top_customers.csv
+  - executive_summary.txt
+- Ensured completed revenue only includes orders where status = completed.
+- Prepared clean outputs for SQL reporting.
+
+What I understood better today:
+- How Bronze, Silver, and Gold layers work together in a data engineering workflow.
+- Why invalid data should be separated instead of deleted.
+- How Python can be used for data cleaning and SQL can be used for business analysis.
+
+What was difficult:
+- Writing validation logic without using libraries like Pandas.
+- Handling different raw values such as completed/Completed/done and converting them into standard formats.
+- Making sure only trusted data reaches reporting.
+
+One result I can explain and defend:
+- Completed revenue is calculated only from valid Silver orders with status = completed.
+- The calculation uses:
+  total_amount = quantity * price
+- Pending, cancelled, and invalid orders are excluded from business revenue reports.
+
+What I need to practice more:
+- Writing more advanced SQL queries for business reporting.
+- Improving pipeline testing and adding automated validation checks.
+- Learning how the same workflow is implemented in Databricks.
+
+Did I use AI? If yes, how did I use it?
+- Yes. I used AI to review my pipeline structure, find possible validation issues, improve documentation, and confirm that my implementation follows the Day 11 requirements.
+- I used it as a learning assistant and kept the implementation logic my own.
