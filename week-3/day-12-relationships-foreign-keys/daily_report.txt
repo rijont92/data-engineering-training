@@ -1,0 +1,76 @@
+Day 12 Daily Report - Relationships, Foreign Keys, and JOINs
+
+Today I worked on:
+
+- Designing a relational database structure using SQL.
+- Understanding how tables connect using primary keys and foreign keys.
+- Creating relationships between customers, products, orders, and order_items tables.
+- Practicing AUTOINCREMENT, constraints, and referential integrity.
+- Writing JOIN queries for business reporting.
+
+
+Tasks completed:
+
+Database Design:
+- Identified the main entities: customers, products, orders, and order_items.
+- Created an ERD explanation describing table relationships.
+- Learned why databases use separate tables instead of storing repeated information.
+
+
+Schema Development:
+- Created tables with:
+  - PRIMARY KEY
+  - FOREIGN KEY
+  - AUTOINCREMENT
+  - NOT NULL constraints
+  - CHECK constraints
+
+- Connected orders with customers using customer_id.
+- Connected order_items with orders and products using foreign keys.
+
+
+Data Insertion and Testing:
+- Inserted valid customer, product, order, and order_item records.
+- Tested invalid inserts to verify database rules.
+- Tested foreign key constraints with missing customer_id and product_id.
+- Tested CHECK constraints for invalid prices and quantities.
+- Tested invalid order statuses.
+
+
+JOIN Practice:
+- Practiced INNER JOIN to combine related data from multiple tables.
+- Practiced LEFT JOIN to show all records even when related data is missing.
+- Created queries combining customers, orders, order_items, and products.
+
+
+Business Reports:
+- Created SQL reports for:
+  - Completed revenue by city.
+  - Completed revenue by product category.
+  - Top customers by revenue.
+  - Top products by revenue.
+  - Order counts per customer.
+  - Products sold multiple times.
+
+
+Problems Faced:
+- Initially used SQLite-specific PRAGMA syntax while working in MySQL Workbench.
+- Learned that foreign key errors happen when referenced records do not exist.
+- Fixed JOIN mistakes by connecting tables using matching primary and foreign keys.
+
+
+What I Learned:
+
+- Primary keys uniquely identify records inside a table.
+- Foreign keys create relationships and protect data consistency.
+- AUTOINCREMENT allows the database to generate unique IDs automatically.
+- Bridge tables are needed to handle many-to-many relationships.
+- INNER JOIN and LEFT JOIN are important for building business reports.
+- Good database design prevents incorrect and duplicated data.
+
+
+Next Steps:
+
+- Improve SQL reporting queries.
+- Add more complex aggregations.
+- Connect relational database concepts with data engineering pipelines.
