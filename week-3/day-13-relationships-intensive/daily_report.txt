@@ -1,0 +1,101 @@
+Day 13 - Intensive Relationships and Foreign Keys
+Unity Tech Hub x Agilyti - Data Engineering / Databricks Training
+
+Date:
+2026-07-22
+
+
+Project:
+Relational Database Design, Foreign Keys, Constraints, and JOIN Reports
+
+
+Overview:
+Today I worked on designing a relational database for Unity Tech Hub training management.
+
+The main focus was understanding how real-world data is separated into tables and connected using primary keys and foreign keys.
+
+
+What I Built:
+
+- Designed a database model with 7 related tables:
+  - students
+  - instructors
+  - courses
+  - enrollments
+  - attendance
+  - assignments
+  - submissions
+
+- Created relationships between tables using foreign keys.
+
+- Created a bridge table (enrollments) to handle the many-to-many relationship between students and courses.
+
+- Added database constraints:
+  - PRIMARY KEY
+  - AUTOINCREMENT
+  - FOREIGN KEY
+  - UNIQUE
+  - NOT NULL
+  - CHECK
+
+
+SQL Work Completed:
+
+- Created schema.sql from zero.
+- Created seed_data.sql with realistic training data.
+- Inserted students, instructors, courses, enrollments, attendance, assignments, and submissions.
+- Tested invalid inserts to verify that constraints protect data quality.
+- Created JOIN reports to combine information from multiple tables.
+- Created a manager report for Unity Tech Hub management.
+
+
+Reports Created:
+
+- Courses with the most enrollments.
+- Students active in multiple courses.
+- Average attendance by course.
+- Assignment completion analysis.
+- Students with missing or late submissions.
+- Instructor with the highest active enrollments.
+- Final combined student-course performance report.
+
+
+Key Concepts Learned:
+
+- Primary keys give every row a unique identity.
+- Foreign keys create relationships between tables.
+- Bridge tables solve many-to-many relationships.
+- Constraints prevent invalid data from entering the database.
+- INNER JOIN returns matching records between tables.
+- LEFT JOIN keeps all records from the main table even without matches.
+
+
+Challenges:
+
+The main challenge was understanding how different tables should be connected and deciding where each piece of information belongs.
+
+I also practiced debugging foreign key and constraint errors by testing invalid data intentionally.
+
+
+What I Can Explain:
+
+I can explain:
+- Why one large table is not a good database design.
+- How one-to-many and many-to-many relationships work.
+- Why enrollments is a bridge table.
+- How JOIN queries combine data for reporting.
+- How constraints improve data quality.
+
+
+Next Improvements:
+
+For future improvements, I would:
+- Connect the database with Python pipelines.
+- Create automated data validation.
+- Build dashboards from SQL reports.
+- Explore how similar relational models are used in Databricks and data warehouses.
+
+
+Final Result:
+
+Completed a relational database system with proper relationships, data protection, and business-focused SQL reports.
