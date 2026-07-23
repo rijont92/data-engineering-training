@@ -1,0 +1,167 @@
+Day 14 - Database Design Challenge
+Daily Report
+
+
+Project:
+Training Center Management Database
+
+
+Summary:
+Today I designed and built a relational database system for a training center management scenario.
+
+The main goal was to create a database that can manage students, programs, instructors, enrollments, attendance, and payments while maintaining data consistency and supporting business reporting.
+
+
+Tasks Completed:
+
+1. Database Design
+- Created the database structure before implementation.
+- Designed tables for:
+  - Students
+  - Programs
+  - Instructors
+  - Enrollments
+  - Attendance
+  - Payments
+
+- Defined primary keys and foreign key relationships.
+- Planned one-to-many and many-to-many relationships.
+
+
+2. Database Schema Implementation
+- Created SQL tables using:
+  - PRIMARY KEY
+  - AUTO_INCREMENT
+  - FOREIGN KEY
+  - NOT NULL
+  - UNIQUE
+  - CHECK constraints
+
+- Added constraints to protect data quality and prevent invalid records.
+
+
+3. Test Data Creation
+- Inserted realistic test data:
+  - Students from different cities
+  - Multiple training programs
+  - Different instructors
+  - Active, completed, and dropped enrollments
+  - Different payment statuses
+  - Attendance records
+
+- Tested relationships between tables.
+
+
+4. Relationship and Constraint Testing
+- Created invalid insert examples to test database protection.
+
+Tested:
+- Invalid student references
+- Invalid program references
+- Invalid enrollment references
+- Duplicate emails
+- Negative payment amounts
+- Invalid status values
+
+The database correctly rejected invalid data using constraints.
+
+
+5. SQL Reports
+Created reports using JOIN operations:
+
+- Students with programs and instructors
+- Active enrollments
+- Completed enrollments
+- Dropped enrollments
+- Attendance reports
+- Payment reports
+- Instructor responsibilities
+
+
+6. Aggregation Reports
+Created business reports using:
+
+- COUNT()
+- SUM()
+- AVG()
+- GROUP BY
+
+Examples:
+- Enrollment count by program
+- Revenue by program
+- Revenue by city
+- Attendance rates
+- Top performing programs
+
+
+7. HAVING Reports
+Created filtered business insights using HAVING.
+
+Examples:
+- Programs with more than 3 enrollments
+- Cities with more than 2 students
+- Programs with high revenue
+- Instructors with many active students
+
+
+8. Data Quality Checks
+Created checks to identify incomplete or risky data.
+
+Checked for:
+- Students without enrollments
+- Programs without enrollments
+- Missing payment records
+- Missing attendance records
+- Students with financial risk
+- Students with attendance risk
+- Instructors without active students
+
+
+9. Documentation
+Created documentation files:
+
+- database_design.md
+- business_insights.md
+- README.md
+
+Documented:
+- Database purpose
+- Table design
+- Relationships
+- Constraints
+- Reporting capabilities
+- Business insights
+
+
+10. Bonus Improvements
+Added additional database concepts:
+
+- SQL Views for active enrollments
+- SQL View for program revenue
+- Student risk summary
+- Scholarship/discount concept
+- Certificate concept
+- Student readiness report
+
+
+Key Learnings:
+
+- How to design relational databases from business requirements.
+- How primary keys and foreign keys maintain relationships.
+- How JOIN operations combine information from multiple tables.
+- How aggregation functions create business reports.
+- How constraints improve data quality.
+- How a database can support management decisions.
+
+
+Challenges:
+
+- Designing correct relationships between tables.
+- Understanding when to use WHERE and HAVING.
+- Handling missing data using LEFT JOIN.
+- Creating reports that provide real business value.
+
+
+Final Result:
+
+The project successfully created a complete training center database system that can store operational data, analyze performance, track payments, and provide useful insights for management decisions.
